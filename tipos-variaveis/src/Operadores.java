@@ -36,8 +36,44 @@ public class Operadores {
         variavel = !variavel;
         System.out.println(variavel);
 
+        //TERNARIO
 
+        int a,b;
+        a = 6;
+        b = 6;
 
+        String resultado = a==b ? "Verdadeiro" : "falso";
+
+        System.out.println(resultado);
+
+        //RELACIONAIS
+
+        int numero1 =1;
+        int numero2 =2;
+
+        boolean simNao  = numero1 == numero2;
+        System.out.println("O primeiro numero é igual ao segundo? " + simNao);
+        
+        simNao  = numero1 != numero2;
+        System.out.println("O primeiro numero é diferente do segundo? " + simNao);
+
+        simNao  = numero1 > numero2;
+        System.out.println("O primeiro numero é maior que o segundo? " + simNao);
+
+        simNao  = numero1 < numero2;
+        System.out.println("O primeiro numero é menor que o segundo? " + simNao);
+
+        if(numero1 < numero2){
+            System.out.println(" A condição é falsa");
+
+            //também e possivel comparar outros valores
+            // quando forem objetos é necessário usar o EQUALS
+
+            String nomeUm = "Fernando";
+            String nomeDois = new String("Fernando");
+
+            System.out.println(nomeUm.equals(nomeDois));
+        }
 
     }
 }
