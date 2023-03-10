@@ -73,6 +73,20 @@ public class Operadores {
             String nomeDois = new String("Fernando");
 
             System.out.println(nomeUm.equals(nomeDois));
+
+            //LOGICOS
+
+            boolean condicao1 = true;
+            boolean condicao2 = true;
+               
+            // pode ser usado valores relacionais pra comparação, pois eles retornam valores lógicos.
+            if(condicao1 && (7 > 4)){
+                System.out.println("As duas condições são verdadeiras");
+            }
+
+            if(condicao1 || condicao2){
+                System.out.println("Uma das condições é verdadeira");
+            }
         }
 
     }
